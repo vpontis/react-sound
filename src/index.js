@@ -86,6 +86,7 @@ export default class Sound extends React.Component {
   };
 
   componentDidMount() {
+    soundManager.setup({ignoreMobileRestrictions: true});
     this.createSound(sound => this.updateSound(sound));
   }
 
